@@ -6,9 +6,11 @@ namespace C_23052025_RUD.Pages.Alumnos
     public class EditModel : PageModel
     {
       
-        {
+        
             [BindProperty]
+
             public Alumnos Alumno { get; set; }
+
         public void OnGet(int id)
         {
             foreach (var c in DatosCompartidos.Alumno)
@@ -41,6 +43,6 @@ namespace C_23052025_RUD.Pages.Alumnos
         }
     }
 }
-        }
-    }
-}
+        
+    
+
