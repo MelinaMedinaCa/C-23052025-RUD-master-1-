@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using C_23052025_RUD.Models;
+using C_23052025_RUD.Data;
 
 namespace C_23052025_RUD.Pages.Alumnos
 {
