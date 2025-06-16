@@ -1,0 +1,29 @@
+﻿@page
+@model C_23052025_RUD.Pages.Carreras.CreateModel
+@{
+	<form method="post">
+	<div class="form-group">
+			<display>Name</display>
+		<input asp-for="Carrera.Nombre" class="form-control" />
+	</div>
+
+	<div class="form-group">
+			<display>Duration (in Ages)</display>
+			<input asp-for="Carrera.Duracionaños" class="form-control" />
+	</div>
+	<div class="form-group">
+			<display>Title awarded</display>
+		<input asp-for="Carrera.Titulootorgado" class="form-control" />
+	</div>
+	<div class="form-group">
+			<display>Modality</display>
+			<label asp-for="Carrera.Modalidad"></label>
+		<select asp-for="Carrera.Modalidad"
+			asp-items="@(new SelectList(Model.Modalidades))"
+			class="form-control">
+			</select>
+		
+	</div>
+    <button type="submit" class="btn btn-primary">Save and Send</button>
+	</form>
+}

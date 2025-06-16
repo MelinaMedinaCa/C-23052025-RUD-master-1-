@@ -1,0 +1,28 @@
+﻿@page
+@model C_23052025_RUD.Pages.Alumno.CreateModel
+@{
+	<form method="post">
+	<div class="form-group">
+			<display>Name</display>
+		<input asp-for="Alumno.Nombre" class="form-control" />
+	</div>
+
+	<div class="form-group">
+			<display>Duration (in Ages)</display>
+			<input asp-for="Alumno.Duracionaños" class="form-control" />
+	</div>
+	<div class="form-group">
+			<display>Title awarded</display>
+		<input asp-for="Alumno.Titulootorgado" class="form-control" />
+	</div>
+	<div class="form-group">
+			<display>Modality</display>
+			<label asp-for="Alumno.Modalidad"></label>
+		<select asp-for="Alumno.Modalidad"
+			asp-items="@(new SelectList(Model.Modalidades))"
+			class="form-control">
+			</select>
+		
+	</div>
+    <button type="submit" class="btn btn-primary">Save and Send</button>
+	</form>

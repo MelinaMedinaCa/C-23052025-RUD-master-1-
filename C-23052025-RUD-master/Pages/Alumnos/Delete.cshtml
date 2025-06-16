@@ -1,0 +1,26 @@
+﻿@page
+@model C_23052025_RUD.Pages.Alumnos.DeleteModel
+@{
+}
+
+<input type="hidden" asp-for="Alumno.Id" />
+
+<form method="post">
+    <h4>Are you sure about delate this career?</h4>
+    <div>
+        <strong>Name:</strong> @Model.Alumno.Nombre
+    </div>
+    <div>
+        <strong>Modality:</strong> @Model.Alumno.Modalidad
+    </div>
+    <div>
+        <strong>Duration:</strong> @Model.Alumno.Duracionaños
+    </div>
+    <div>
+       <strong>Title awarded:</strong> @Model.Alumno.Titulootorgado
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-danger">Delate</button>
+    <a asp-page="Index" class="btn btn-secondary">Abort</a>
+</form>
